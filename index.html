@@ -1,122 +1,292 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>page 2 </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+        <title>PAGE @</title>
         <style>
-            /*.n-tdbr{
-                border: 1px dashed #000;
-            }*/
+            .n_tbdr{
+                border:1px dashed #000;
+            }
             body{
-                background:  #442460 ;
+                background: #442460;
+                background-image: url('img/rabbit.svg');
+                background-repeat: no-repeat;
+                background-position: 100px 772px;
             }
             header{
-                height: 200px;
+                height: 130px;
             }
-            .n-circle{
-                width: 35px;
-                height: 35px;
-                border-radius: 35px ;
-                background: #744c97;    
-            }
-            .active{
-                padding: 33px 17px 11px 17px;
-                
-            }
-            .active-col{
-                background: #573A70 !important;
-                color: #ffb900 !important ;
-            }
-            .active :hover > a{
-                color: #ffb900;
-            } 
-            .text-color{
-                color: #d1b1d9;
-            }
-            .main{
-                height: 600px;
+            .n_main{
+                min-height: 900px;
             }
             footer{
-                height: 350px;
-                background: #f3f3f3;
+                min-height: 320px;
             }
-            .f-color{
-                color: #63627d;
+            .n_header_nav > li > a{
+                padding: 61px 32px 20px 32px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .active{
+                background: #573a70;
+                color:#ffb900 !important;
+            }
+            .active:hover{
+                color:#ffb900;
+            }
+            .n_circle{
+                width: 37px;
+                height: 37px;
+                border-radius: 37px;
+                background: #744c97;
+            }
+            /*
+            .n_userlink{
+                color:#e8c8ed;
+            }
+            */
+            .n_header_nav > li:last-child > a{
+                color:#e8c8ed;
+            }
+            .myCollor h4{
+                font-family: 'Nunito', sans-serif;
+            }
+            .myCollor *{ /* Universal Selector */
+                color:#3e3d5f !important;
+            }
+            .n_panel{
+                height: 220px;
+                background: #424d83;
+            }
+            .n_panel:hover{
+               height: 445px; 
+               background: #798ce7;
+               cursor: pointer;
+            }
+            .n_panel:hover > div{
+                display: block !important;
+            }
+            .n_panel1_c1{
+                /* transition: property duration timing-function delay|initial|inherit; */
+                transition: all .2s linear ;
+                height: 252px;
+                background: #5264bb;
+            }
+            .arrow{
+                top: 0px;
+                left: 0px;
+                width: 0px;
+                height: 35px;
+                border: 1px solid #FFC630;
+                opacity: 1;
+            }
+            .arrow1{
+                top: 0px;
+                left: 0px;
+                width: 7px;
+                height: 4px;
+                transform: matrix(-1, 0, 0, -1, 0, 0);
+                background: #FFC630 0% 0% no-repeat padding-box;
+                opacity: 1;
             }
         </style>
     </head>
-    <body class="n-tdbr">
-        <header class="container ">
-            <nav class="nav-bar" >
-                <a href="#" class="Float-start btn mt-3" > <img src="img/1.png" alt=""></a>
-                <ul class="nav float-end ">
-                    <li class="nav-item">
-                      <a class="nav-link active active-col rounded-bottom text-white" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-white " href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-white " href="#">Our Plans</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-white">Tools &amp; Resources</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  active  text-color ">   Nidhi Bakadiya <i class="fas fa-angle-down"></i></a>
-                    </li>
-                  </ul>
-            </nav>
-        </header>
-        <div class="main n-tdbr container ">
+    <body>
+        <div class="arrow ">
+            <span class="arrow1"></span>
 
         </div>
-        <footer class="n-tdbr container f-color">
-            <div class="container p-0 ps-2">
-                <div class="row n-tdbr">
-                  <div class="col-5 pt-5">
-                        <h3>FEATURES</h3>
-                        <a href="#" class=" text-decoration-none  ps-5 pe-3 f-color "> Beginner Guide</a>
-                        <a href="#" class=" text-decoration-none f-color"> Tools and Resources</a>
-                  </div>
-                  <div class="col-7 pt-5 n-tdbr">
-                        <h3>SUPPORT</h3>
-                        <a href="#" class=" text-decoration-none  ps-5 pe-3 f-color "> Help Center </a>
-                        <a href="#" class=" text-decoration-none f-color pe-3"> Submit a Ticket</a>
-                        <a href="#" class=" text-decoration-none f-color"> Contact Us </a>
-                  </div>  
+        <div class="container p-0 n_container">
+            <header class="">
+                <a href="#" class="float-start mt-5">
+                    <img src="./img/logo2.png" height="30">
+                </a>
+                <ul class="nav float-end n_header_nav" >
+                    <li class="nav-item">
+                      <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white " href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Our Plans</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Tools &amp; Resources</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link position-relative n_userlink pe-0" href="#"><span class="d-inline-block n_circle position-absolute top-50 start-0" style="left:-10px !important"></span> Nidhi Bokadiya <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                  </ul>
+            </header>
+            <div class="n_main  text-white">
+                <h1>Welcome Nidhi Bokadiya</h1>   
+                <p>How can i help you ?</p>   
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>   
+                <div class="row m-0">
+                    <div class="col-12 col-sm-3 mb-3">
+                        <div class="rounded rounded-3 n_panel n_panel1 p-3">
+                            <img src="img/launch.svg">
+                            <h4 class="mb-4">Innovation Decision Hub</h4>
+                            <div class="n_panel1_c1 d-none">
+                                <ul class="nav flex-column ">
+                                    <li class="nav-item">
+                                        <a class="nav-link n-col text-white" href="#">Discover Opportunities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link n-col text-white" href="#">Creative Brainstorming</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link n-col text-white" href="#">Idea Screen &amp; Evaluation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link n-col text-white" href="#" tabindex="-1" aria-disabled="true">Mix Test</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="float-end text-white text-decoration-none">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 mb-3">
+                        <div class="rounded rounded-3 n_panel n_panel2">
+                            <div class="rounded rounded-3 n_panel n_panel1 p-3">
+                                <img src="img/launch.svg">
+                                <h4 class="mb-4">MarketPlace Vistas & Decision Hub (MVDH)</h4>
+                                <div class="n_panel1_c1 d-none">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link n-col text-white" aria-current="page" href="#">Virtual Shelf</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link n-col text-white" href="#">Stakeholder Experience Mapping (Consumers,
+                                                Customers and Employees)</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link n-col text-white" href="#">Digi Shelf</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="float-end text-white text-decoration-none">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 mb-3">
+                        <div class="rounded rounded-3 n_panel n_panel3">
+                            <div class="rounded rounded-3 n_panel n_panel2">
+                                <div class="rounded rounded-3 n_panel n_panel1 p-3">
+                                    <img src="img/Group 130.svg">
+                                    <h4 class="mb-4">SustainX Decision Hub</h4>
+                                    <div class="n_panel1_c1 d-none">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link n-col text-white" aria-current="page" href="#">Discover Opportunities</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link n-col text-white" href="#">Creative Brainstorming</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link n-col text-white" href="#">Idea Screen & Evaluation</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link n-col text-white" href="#" tabindex="-1" aria-disabled="true">Partner
+                                                    Evaluation</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link n-col text-white" href="#">Social Impact Assessment</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="float-end text-white text-decoration-none">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 mb-3">
+                        <div class=" rounded rounded-3 n_panel n_panel4">
+                            <div class="rounded rounded-3 n_panel n_panel2">
+                                <div class="rounded rounded-3 n_panel n_panel1 p-3">
+                                    <img src="img/Group 130.svg">
+                                    <h4 class="mb-4">Agile ResearchOps & Knowledge Hub (ARKH)</h4>
+                                    <div class="n_panel1_c1 d-none">
+                                        <p>Agile Intelligent Research Ops DIY Platform (AI enabled Project Management System)</p>
+                                        <p>Agile Analytics: AI enabled Transcription, Translation and Video Editing Tool</p>
+                                    </div>
+                                    <a href="#" class="float-end text-white text-decoration-none">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container pt-5 ps-2">
-                <div class="row n-tdbr">
-                  <div class="col-5">
-                        <img src="img/1.png" alt="">
-                        <p> IDEAL INSIGHTS &amp; DECISION INTELLENCE PTE LTD</p>
-                        <p>31 Rochester Drive ,Level 24,Singapore,138637</p>
-                  </div>
-                  <div class="col-7 n-tdbr">
-                       
-                        <a href="#" class=" text-decoration-none  float-end ps-  pe-1 f-color "> <img src="img/twitter.svg" alt=""> </a>
-                        <a href="#" class=" text-decoration-none   float-end  ps-5 pe-1 f-color "> <img src="img/youtube-icon.svg" alt=""> </a>
-                        <a href="#" class=" text-decoration-none  pt-5 ps-3 float-end f-color ">Privacy Policy</a>    
-                        <a href="#" class=" text-decoration-none  pt-5 ps-5 float-end f-color ">Terms Of Services </a>
-                        
-                  </div>  
+            <footer class=" bg-white myCollor">
+                <div class="row m-0 mb-5">
+                    <div class="col-5">
+                        <h4 class="fw-bold">FEATURES</h4>
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Beginers Guide</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Tools and Resources</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-7">
+                        <h4 class="fw-bold">Support</h4>
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Help Center</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Submit a Ticket</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                          </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="container pt-1 ps-2">
-                <div class="row n-tdbr">
-                  <div class="col-12 ">
-                    
-                   
-                  </div>
+                <div class="row m-0 ">
+                    <div class="col-5">
+                        <img src="img/logo.svg">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    </div>
+                    <div class="col-7">
+                        <ul class="nav float-end">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                  <img src="./img/twitter.svg" >
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link pe-0" href="#"><img src="./img/youtube-icon.svg" ></a>
+                            </li>
+                          </ul>
+
+                          <div class="clearfix"></div>
+
+                          <ul class="nav float-end ">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Terms of Service</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link pe-0 " href="#">Privacy Policy</a>
+                            </li>
+                          </ul>
+
+                    </div>
                 </div>
-            </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>
 </html>
